@@ -17,7 +17,6 @@ class CreateShorturlsTable extends Migration
             $table->bigIncrements('id');
             $table->string('slug', 100)->unique();
             $table->string('link', 255);
-            $table->unsignedInteger('hits')->default(0);
             $table->timestamps();
         });
     }
