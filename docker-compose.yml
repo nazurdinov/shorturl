@@ -4,7 +4,6 @@ services:
     build:
       context: .
       dockerfile: .docker/Dockerfile
-    image: short-url
     links:
     - mysql
     environment:
